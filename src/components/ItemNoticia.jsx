@@ -10,7 +10,7 @@ const ItemNoticia = ({noticia}) => {
       <Card.Body>
         <Card.Title>{noticia.title}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">{noticia.category}</Card.Subtitle>
-        <Card.Text>
+        <Card.Text className="textoRecortado">
           {noticia.content}
         </Card.Text>
         <a href={noticia.link}>

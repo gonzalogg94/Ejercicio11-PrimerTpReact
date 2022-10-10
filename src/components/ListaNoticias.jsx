@@ -1,13 +1,15 @@
 
-import { Row } from 'react-bootstrap';
+import { Row,Card } from 'react-bootstrap';
 import ItemNoticia from './ItemNoticia';
 
 
 const ListaNoticias = ({noticias}) => {
     return (
-        <Row className='pt-5'>
+        <Card className='mt-5'>
+        <Row className='pt-3'>
             {noticias.map((noticia, posicion)=>(<ItemNoticia key={posicion} noticia={noticia}></ItemNoticia>))}
         </Row>
+        </Card>
             
         
     );
