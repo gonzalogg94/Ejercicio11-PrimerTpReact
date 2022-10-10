@@ -5,7 +5,7 @@
 ## Acceso a la Demo del proyecto en el siguiente link 👀:
 
 
-lista-peliculas-react.netlify.app
+lista-noticias-react.netlify.app
 
 
 
