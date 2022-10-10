@@ -2,19 +2,20 @@
 import {Card,Button, Col} from "react-bootstrap"
 
 
-const ItemNoticia = () => {
+const ItemNoticia = ({noticia}) => {
     return (
         <Col sm={12} md={6} lg={4}>
         <Card>
-      <Card.Img variant="top" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/FEB5/production/_97750256_gettyimages-845340462.jpg" />
+      <Card.Img variant="top" src={noticia.image_url} />
       <Card.Body>
-        <Card.Title>Titulo noticia</Card.Title>
-        <Card.Subtitle className="mb-2 text-muted">Subtitulo</Card.Subtitle>
+        <Card.Title>{noticia.title}</Card.Title>
+        <Card.Subtitle className="mb-2 text-muted">{noticia.category}</Card.Subtitle>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          {noticia.content}
         </Card.Text>
+        <a href={noticia.link}>
         <Button variant="danger">Ver mas</Button>
+        </a>
       </Card.Body>
     </Card>
         </Col>
